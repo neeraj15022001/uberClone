@@ -9,7 +9,7 @@ function Search(props) {
       {/*Saved Places*/}
       {/*Confirm Location*/}
       <ButtonContainer>
-        <Link href={"/"}>
+        <Link href={"/"} passHref={true}>
           <BackButton
             src={"https://img.icons8.com/ios-filled/50/000000/left.png"}
           />
