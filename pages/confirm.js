@@ -11,11 +11,10 @@ function Confirm(props) {
   const [pickup, setPickup] = useState();
   const [dropOff, setDropOff] = useState();
   useEffect(() => {
-    getPickupCoordinates();
-    getDropOffCoordinates();
-  }, []);
-  const getPickupCoordinates = () => {
-    const location = "Punjab";
+    getPickupCoordinates(pickupSearched);
+    getDropOffCoordinates(dropOffSearched);
+  }, [dropOffSearched, pickupSearched]);
+  const getPickupCoordinates = (location) => {
     const url =
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${location}.json?` +
       new URLSearchParams({
@@ -27,8 +26,7 @@ function Confirm(props) {
       .then((res) => res.json())
       .then((res) => setPickup(res.features[0].center));
   };
-  const getDropOffCoordinates = () => {
-    const dropOff = "Himachal Pradesh";
+  const getDropOffCoordinates = (dropOff) => {
     const url =
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${dropOff}.json?` +
       new URLSearchParams({

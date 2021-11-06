@@ -8,7 +8,7 @@ function RideSelector(props) {
       <Title>Choose a ride, or swipe up for more</Title>
       <CarList>
         {carList.map((car, index) => (
-          <Car key={{ index }}>
+          <Car key={`uber-${index} `}>
             <CarImage src={car.imgUrl} />
             <CarDetails>
               <Service>{car.service}</Service>

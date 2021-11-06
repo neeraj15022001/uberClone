@@ -49,14 +49,14 @@ function Search() {
         href={{
           pathname: "/confirm",
           query: {
-            pickupSearched: "punjab",
-            dropOffSearched: "himachal pradesh",
+            pickupSearched: pickupField,
+            dropOffSearched: dropOffField,
           },
         }}
         passHref={true}
       >
         <ConfirmButtonContainer>
-          <ConfirmButton>Confirm Locations</ConfirmButton>
+          <ConfirmButton>Confirm Location</ConfirmButton>
         </ConfirmButtonContainer>
       </Link>
     </Wrapper>

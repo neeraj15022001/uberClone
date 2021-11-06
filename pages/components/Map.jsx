@@ -11,7 +11,7 @@ function Map({ pickup, dropOff }) {
       center: [76.666732779999986, 31.29208373999997],
       zoom: 5,
     });
-    console.log(pickup, dropOff);
+    // console.log(pickup, dropOff);
     if (pickup) addToMap(map, pickup);
     if (dropOff) addToMap(map, dropOff);
     if (pickup && dropOff) {
@@ -22,7 +22,7 @@ function Map({ pickup, dropOff }) {
   }, [pickup, dropOff]);
 
   const addToMap = (map, coordinates) => {
-    console.log(coordinates);
+    // console.log/(coordinates);
     const marker1 = new mapboxgl.Marker().setLngLat(coordinates).addTo(map);
   };
 
