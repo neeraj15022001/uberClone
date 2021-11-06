@@ -4,8 +4,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <Wrapper>
+      {/*Map*/}
+      {/*Action Item*/}
       <Map></Map>
       <ActionItems>
+        {/*Header*/}
+        {/*Action Button Container*/}
+        {/*Input Container*/}
         <Header>
           <UberLogo
             src={"https://i.ibb.co/84stgjq/uber-technologies-new-20218114.jpg"}
