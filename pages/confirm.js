@@ -8,8 +8,8 @@ import Link from "next/link";
 function Confirm(props) {
   const router = useRouter();
   const { pickupSearched, dropOffSearched } = router.query;
-  const [pickup, setPickup] = useState();
-  const [dropOff, setDropOff] = useState();
+  const [pickup, setPickup] = useState([0, 0]);
+  const [dropOff, setDropOff] = useState([0, 0]);
   useEffect(() => {
     getPickupCoordinates(pickupSearched);
     getDropOffCoordinates(dropOffSearched);
@@ -51,7 +51,7 @@ function Confirm(props) {
       </Link>
       <Map pickup={pickup} dropOff={dropOff} />
       <RideContainer>
-        <RideSelector />
+        <RideSelector pickupCoordinates={pickup} dropoffCoordinates={dropOff} />
         <ConfirmButtonContainer>
           <ConfirmButton>Confirm UberX</ConfirmButton>
         </ConfirmButtonContainer>
