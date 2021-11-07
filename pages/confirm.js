@@ -59,10 +59,10 @@ function Confirm(props) {
     </Wrapper>
   );
 }
-const Wrapper = tw.div`flex flex-col h-screen`;
+const Wrapper = tw.div`flex flex-col h-screen dark:bg-gray-900`;
 const RideContainer = tw.div`flex flex-col h-1/2`;
 const ConfirmButtonContainer = tw.div`flex m-4`;
 const ConfirmButton = tw.button`bg-black text-white flex-1 h-14`;
-const BackButtonContainer = tw.div`p-2 shadow-lg m-3 absolute top-0 h-10 w-10 bg-white rounded-full z-10`;
+const BackButtonContainer = tw.div`p-2 shadow-lg m-3 absolute top-0 h-10 w-10 bg-white rounded-full z-10 dark:bg-gray-600`;
 const BackButton = tw.img``;
 export default Confirm;

@@ -63,7 +63,7 @@ export default function Home() {
 }
 
 const Wrapper = tw.div`
-flex flex-col bg-white h-screen
+flex flex-col bg-white h-screen dark:bg-gray-900
 `;
 
 const ActionItems = tw.div`
@@ -94,7 +94,7 @@ const ActionButtons = tw.div`
 flex justify-between items-center
     `;
 const ActionButton = tw.div`
-bg-gray-200 flex-1 m-1 h-32 flex flex-col items-center justify-center rounded-lg transform hover:scale-105 transition text-xl
+bg-gray-200 flex-1 m-1 h-32 flex flex-col items-center justify-center rounded-lg transform hover:scale-105 transition text-xl dark:bg-gray-600
     `;
 
 const ActionButtonImage = tw.img`
@@ -102,5 +102,5 @@ h-3/5
 `;
 
 const InputButton = tw.div`
-h-20 bg-gray-200 text-2xl p-4 rounded-lg mt-8 flex items-center
+h-20 bg-gray-200 text-2xl p-4 rounded-lg mt-8 flex items-center dark:bg-gray-600
     `;

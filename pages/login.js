@@ -23,10 +23,10 @@ function Login(props) {
     </Wrapper>
   );
 }
-const Wrapper = tw.div`p-4 h-screen flex flex-col bg-gray-200`;
+const Wrapper = tw.div`p-4 h-screen flex flex-col bg-gray-200 dark:bg-gray-900`;
 const SignInButton = tw.button`bg-black text-white text-center py-4 mt-8 self-center w-full`;
 const UberLogo = tw.img`h-20 w-auto object-contain self-start`;
-const Title = tw.div`capitalize text-5xl pt-4 text-gray-400`;
+const Title = tw.div`capitalize text-5xl pt-4 text-gray-400 `;
 const HeadImage = tw.img`object-contain w-full`;
 
 export default Login;
